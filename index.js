@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import Blog from "./model/Blog.js";
 
-mongoose.connect("mongodb+srv://harsh:harsh@harsh.21iwvpb.mongodb.net/myDatabase?retryWrites=true&w=majority");
+mongoose.connect(url);
 
 const article = await Blog.create({
     title: "Awesome post",
